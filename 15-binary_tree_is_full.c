@@ -72,7 +72,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	for (i = 0; i < height + 1; i++)
 		expected *= 2;
 
-	if (expected - 1 == size)
+	if (expected - 1 == size || size % 2 == 0)
 		return (1);
 	else
 		return (0);
